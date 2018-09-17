@@ -1,0 +1,12 @@
+.wrapper{
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 100%;
+}
+#form_login, #form_register{
+	width: 19rem;
+	border: 2px solid #f8f9fa;
+	padding: 17px;
+    border-radius: 7px;
+}

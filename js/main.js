@@ -9,3 +9,5 @@ $(document).ready(function(){
 	})
 	
 })
+
+// $("#reg_fail").html('<div class="alert alert-warning"><strong>Warning!</strong> Indicates a warning that might need attention.</div>')

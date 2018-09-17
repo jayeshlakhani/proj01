@@ -7,7 +7,9 @@
 <br>
 <div class="wrapper">
   <div class="container">
+
     <form id="form_register" class="mx-auto" method="post" action="database/connect.php">
+      <label for="dander" id="reg_fail"></label>
       <div class="form-group">
         <label for="username">Username</label>
         <input type="text" name="username" class="form-control" id="username" placeholder="Enter Username">

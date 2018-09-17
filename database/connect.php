@@ -16,7 +16,7 @@ if ($password === $password_2) {
 
 	if ($result->num_rows > 0) {
 		echo "Already Register"."<br>";
-		header("Location: http://localhost/proj01/register.php");
+		header("Location: http://localhost/proj01/register.php?msg='Already Register'");
 	}else{
 		$stmt = $connect->prepare("INSERT INTO `user`(`username`, `email`, `password`) VALUES (?,?,?)");
 		$stmt->bind_param('sss',$username,$email,$password);

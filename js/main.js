@@ -1,32 +1,13 @@
 $(document).ready(function(){
-	$("#submit_btn").on("click",function(){
-		$('#through_ajax').val('true');
+	$("#form_register").on("submit",function(){
 		var pass_1 = $("#password_1").val();
 		var pass_2 = $("#password_2").val();
-		/*if ((pass_1 != pass_2)) {
+		if (!(pass_1 == pass_2)) {
 			alert('Password Does Not Match!!');
 			return false;
-		}else{*/
-			var DOMAIN = "http://localhost/proj01/";
-			jQuery.ajax({
-				url : DOMAIN + "database/connect.php",
-				method : "POST",
-				data : $("#register_form").serialize(),
-				datatype:'json',
-				success : function(data){
-					var res = JSON.parse(data);
-    				if(res.status == 'false'){
-    					if(res.fieldname == 'username'){
-
-    					}
-    					return false;
-    				}else{
-
-    				}				}
-			})
-		//}
-		$('#through_ajax').val('false');
-
+		}else{
+			$("#form_register").action("database/connect.php");
+		}
 	});
 	
 })
